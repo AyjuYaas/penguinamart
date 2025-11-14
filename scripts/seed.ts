@@ -1,11 +1,7 @@
 // scripts/seed.ts
 import { PrismaClient } from "@prisma/client";
 import { faker } from "@faker-js/faker";
-import {
-  OrderStatus,
-  PaymentStatus,
-  ProductCategory,
-} from "@/generated/prisma";
+import { OrderStatus, PaymentStatus, ProductCategory } from "@prisma/client";
 
 const prisma = new PrismaClient();
 

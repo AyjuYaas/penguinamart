@@ -1,6 +1,6 @@
 "use server";
 
-import { $Enums } from "@/generated/prisma";
+import { $Enums } from "@prisma/client";
 import { prisma } from "@/lib/prisma";
 import { HomeProductType, RegisterProduct } from "@/types/product.types";
 

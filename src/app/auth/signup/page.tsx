@@ -6,7 +6,6 @@ export const metadata = {
 };
 
 const Signup = () => {
-  console.log(process.env.NODE_ENV);
   return (
     <div className="w-full flex justify-center">
       <div className="w-[30rem] h-max flex flex-col gap-5 p-7 rounded-md border-2 shadow-2xl">

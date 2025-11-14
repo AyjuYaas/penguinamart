@@ -2,6 +2,8 @@ import { Metadata } from "next";
 import ProductDetails from "./ProductDetails";
 import { prisma } from "@/lib/prisma"; // or your data fetching method
 
+export const dynamic = "force-dynamic";
+
 type Props = {
   params: {
     productid: string;

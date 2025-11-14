@@ -41,11 +41,13 @@ const DisplayProducts = () => {
             key={index}
             className="bg-[#82a0aa] w-[15rem] h-[23rem] p-5 rounded-md shadow-md hover:-translate-y-1 transition-all duration-200 cursor-pointer flex flex-col items-center justify-start"
           >
-            <img
-              src={product.image}
-              alt={product.name}
-              className="h-[14rem] w-[14rem] object-full rounded-md bg-white"
-            />
+            <div className="w-[14rem] h-[100rem] overflow-hidden rounded-md bg-white flex items-center justify-center">
+              <img
+                src={product.image}
+                alt={product.name}
+                className="w-full h-full object-contain"
+              />
+            </div>
             <article className="text-2xl mt-3 text-[#334a52] font-bold text-center grid grid-rows-4 gap-1 h-full">
               <p className="tracking-wider row-span-2 line-clamp-2 overflow-hidden text-ellipsis">
                 {product.name}

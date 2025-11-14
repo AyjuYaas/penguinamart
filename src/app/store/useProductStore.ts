@@ -10,7 +10,7 @@ import {
   getProductDetails,
   getProductReviews,
 } from "@/actions/product.action";
-import { ProductCategory } from "@/generated/prisma";
+import { ProductCategory } from "@prisma/client";
 
 interface ProductStore {
   products: HomeProductType[];
